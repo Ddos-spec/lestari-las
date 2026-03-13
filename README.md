@@ -1,0 +1,27 @@
+# Lestari Las
+
+Landing page modern untuk bengkel las yang melayani pembuatan pagar, railing balkon, canopy, railing tangga, dan pintu garasi.
+
+## Jalankan Lokal
+
+```bash
+npm install
+npm run dev
+```
+
+## Build Production
+
+```bash
+npm run build
+```
+
+## Deploy
+
+Project ini sudah disiapkan untuk deploy ke GitHub Pages lewat workflow di [.github/workflows/deploy.yml](.github/workflows/deploy.yml).
+
+Catatan final sebelum go live:
+
+- Ganti nomor WhatsApp dan kontak bisnis asli
+- Tambahkan area layanan yang spesifik
+- Masukkan foto proyek asli pada section showcase atau portfolio
+- Jika nama repo berubah, sesuaikan nilai `base` di `vite.config.js`
