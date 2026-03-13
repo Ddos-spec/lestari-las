@@ -6,6 +6,8 @@ const brandLogo = `${baseUrl}brand/lestari-las-logo.webp`
 const youtubeEmbedUrl =
   'https://www.youtube.com/embed/ZUeP3EcdEkY?si=DcnmEv7xc_Dr1oSO'
 const locationLink = 'https://share.google/DHpgkHaOhwdQCLhwM'
+const mapEmbedUrl =
+  'https://www.google.com/maps?q=Bengkel%20Las%20Lestari%20Jalan%20Jombang%20Raya%20Ciledug%20depan%20Ruko%20Emerald%20Bintaro%20samping%20Apartemen%20Lippo&z=17&output=embed'
 const whatsappLink =
   'https://wa.me/6282113114498?text=Halo%20Lestari%20Las,%20saya%20mau%20tanya%20tentang%20jasa%20las%20dan%20fabrikasi.'
 
@@ -543,6 +545,30 @@ function App() {
                     <p>{item}</p>
                   </article>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="footer-map-section">
+          <div className="container">
+            <div className="footer-map-card" data-reveal>
+              <div className="footer-map-copy">
+                <p className="section-kicker">Lokasi Bengkel</p>
+                <h2>Workshop Bengkel Las Lestari bisa langsung dilihat lewat peta di bawah ini.</h2>
+                <p>
+                  Cocok untuk pengunjung yang ingin cek arah, memperkirakan jarak tempuh, atau
+                  memastikan patokan lokasi sebelum datang ke bengkel.
+                </p>
+              </div>
+
+              <div className="footer-map-frame">
+                <iframe
+                  src={mapEmbedUrl}
+                  title="Peta lokasi Bengkel Las Lestari"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </div>
