@@ -7,7 +7,7 @@ const youtubeEmbedUrl =
   'https://www.youtube.com/embed/ZUeP3EcdEkY?si=DcnmEv7xc_Dr1oSO'
 const locationLink = 'https://share.google/GcVGlLN2jODNQgiD9'
 const mapEmbedUrl =
-  'https://www.google.com/maps?q=Bengkel%20Las%20Lestari%20Jalan%20Jombang%20Raya%20Ciledug%20depan%20Ruko%20Emerald%20Bintaro%20samping%20Apartemen%20Lippo&z=17&output=embed'
+  'https://www.google.com/maps?q=Bengkel%20Las%20Dian%20Jaya%20Jl.%20Jombang%20Raya%20No.10%20Pd.%20Aren%20Kota%20Tangerang%20Selatan%20Banten&z=17&output=embed'
 const whatsappLink =
   'https://wa.me/6282113114498?text=Halo%20Lestari%20Las,%20saya%20mau%20tanya%20tentang%20jasa%20las%20dan%20fabrikasi.'
 
@@ -526,15 +526,16 @@ function App() {
 
             <div className="contact-info-grid">
               <article className="location-card" data-reveal style={{ '--delay': '80ms' }}>
-                <p className="section-kicker">Alamat Bengkel</p>
-                <h3>Bengkel Las Lestari</h3>
+                <p className="section-kicker">Patokan Google Maps</p>
+                <h3>Bengkel Las Dian Jaya</h3>
                 <p className="location-copy">
-                  Jalan Jombang Raya, Ciledug. Depan Ruko Emerald Bintaro, sekitar 100 meter dari
-                  Gerbang ABRI arah Ciledug, tepat di samping Apartemen Lippo.
+                  Titik map workshop mengarah ke Bengkel Las Dian Jaya di Jalan Jombang Raya No.10,
+                  Pondok Aren, Kota Tangerang Selatan. Lokasinya berada di area Jombang Raya dan
+                  bisa dijadikan patokan saat berkunjung ke workshop.
                 </p>
                 <div className="location-note">
                   <strong>Patokan lokasi</strong>
-                  <span>Mudah ditemukan dari arah Ciledug dan area Bintaro sekitarnya.</span>
+                  <span>Gunakan titik Bengkel Las Dian Jaya saat buka Maps agar arahnya lebih tepat.</span>
                 </div>
               </article>
 
@@ -555,17 +556,17 @@ function App() {
             <div className="footer-map-card" data-reveal>
               <div className="footer-map-copy">
                 <p className="section-kicker">Lokasi Bengkel</p>
-                <h2>Workshop Bengkel Las Lestari bisa langsung dilihat lewat peta di bawah ini.</h2>
+                <h2>Workshop bisa dicek langsung lewat titik map Bengkel Las Dian Jaya.</h2>
                 <p>
-                  Cocok untuk pengunjung yang ingin cek arah, memperkirakan jarak tempuh, atau
-                  memastikan patokan lokasi sebelum datang ke bengkel.
+                  Gunakan peta di bawah ini untuk melihat arah, memperkirakan jarak tempuh, dan
+                  memastikan patokan lokasi sebelum datang ke workshop.
                 </p>
               </div>
 
               <div className="footer-map-frame">
                 <iframe
                   src={mapEmbedUrl}
-                  title="Peta lokasi Bengkel Las Lestari"
+                  title="Peta lokasi Bengkel Las Dian Jaya"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
