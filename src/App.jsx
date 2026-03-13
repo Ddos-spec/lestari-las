@@ -4,7 +4,7 @@ import './App.css'
 const baseUrl = import.meta.env.BASE_URL
 const brandLogo = `${baseUrl}brand/lestari-las-logo.webp`
 const whatsappLink =
-  'https://wa.me/6287748306605?text=Halo%20Lestari%20Las,%20saya%20ingin%20minta%20estimasi%20untuk%20pengerjaan%20las.'
+  'https://wa.me/6282113114498?text=Halo%20Lestari%20Las,%20saya%20ingin%20minta%20estimasi%20untuk%20pengerjaan%20las.'
 
 const highlights = [
   'Model bisa disesuaikan dengan gaya rumah atau bangunan',
