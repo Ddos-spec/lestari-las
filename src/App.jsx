@@ -4,9 +4,9 @@ import './App.css'
 const baseUrl = import.meta.env.BASE_URL
 
 const highlights = [
-  'Desain custom menyesuaikan fasad rumah atau bangunan',
-  'Tampilan premium dengan struktur yang tetap kokoh',
-  'Lebih meyakinkan untuk calon pelanggan yang lihat dari HP',
+  'Model bisa disesuaikan dengan gaya rumah atau bangunan',
+  'Struktur kuat dengan detail finishing yang lebih rapi',
+  'Ukuran, bukaan, dan material mengikuti kebutuhan lapangan',
 ]
 
 const marqueeItems = [
@@ -123,32 +123,32 @@ const processSteps = [
 
 const faqs = [
   {
-    question: 'Kenapa isi website ini sekarang lebih banyak bacaan?',
+    question: 'Bagaimana memilih model pagar yang cocok untuk rumah?',
     answer:
-      'Karena bisnis seperti bengkel las butuh trust. Copy yang lebih kaya membantu calon pelanggan memahami kualitas pengerjaan, alur kerja, dan jenis proyek yang bisa ditangani tanpa harus banyak menebak.',
+      'Mulailah dari karakter rumah dan kebutuhan utamanya. Jika fokus Anda keamanan, pilih struktur yang kokoh dan ritme bilah yang rapat. Jika fokusnya tampilan, model pagar sebaiknya mengikuti garis fasad rumah agar hasilnya terlihat menyatu.',
   },
   {
-    question: 'Animasinya aman untuk pengguna Android?',
+    question: 'Apa yang paling memengaruhi harga pengerjaan las?',
     answer:
-      'Aman. Aku pakai animasi masuk yang ringan, transisi lembut, dan gerakan dekoratif sederhana supaya terasa hidup tanpa bikin loading terasa berat.',
+      'Biasanya harga dipengaruhi ukuran area, jenis material, tingkat kerumitan desain, sistem bukaan, dan jenis finishing. Semakin detail model dan semakin besar bidang yang dikerjakan, biasanya waktu produksi dan biaya juga ikut bertambah.',
   },
   {
-    question: 'Foto yang dipakai sekarang dari mana?',
+    question: 'Finishing seperti apa yang cocok untuk area luar rumah?',
     answer:
-      'Foto sementara diambil dari internet sebagai visual tematik yang masih relevan dengan pagar, railing, pintu garasi, dan eksterior rumah. Nanti paling bagus tetap diganti foto proyek asli klien.',
+      'Untuk area luar ruang, finishing harus mempertimbangkan panas, hujan, dan kelembapan. Karena itu pemilihan cat, lapisan pelindung, dan persiapan permukaan sebelum pengecatan sangat penting agar hasil lebih awet dan tetap enak dilihat.',
   },
   {
-    question: 'Kalau nanti ada foto proyek asli, bisa diganti cepat?',
+    question: 'Apa yang sebaiknya disiapkan sebelum konsultasi?',
     answer:
-      'Bisa cepat. Struktur layout gallery dan hero sudah dibuat supaya tinggal ganti file gambar dan teks pendeknya saja.',
+      'Siapkan ukuran kasar, foto lokasi dari beberapa sudut, referensi model yang disukai, dan gambaran prioritas Anda. Dengan begitu proses diskusi akan lebih cepat dan rekomendasi desain bisa lebih tepat.',
   },
 ]
 
 const prepItems = [
-  'Nomor WhatsApp bisnis yang aktif',
-  'Area layanan yang ingin ditonjolkan',
-  '5 sampai 10 foto proyek asli terbaik',
-  'Kalimat singkat tentang keunggulan bengkel',
+  'Ukuran kasar area yang akan dikerjakan',
+  'Foto lokasi dari beberapa sudut',
+  'Referensi model yang disukai',
+  'Budget atau prioritas kebutuhan utama',
 ]
 
 function App() {
@@ -204,17 +204,17 @@ function App() {
         <section className="hero-section" id="top">
           <div className="container hero-grid">
             <div className="hero-copy" data-reveal>
-              <p className="eyebrow">Website Bengkel Las yang Dibikin Lebih Hidup, Lebih Penuh, dan Lebih Meyakinkan</p>
-              <h1>Pagar, Canopy, Railing, dan Pintu Garasi yang Kelihatan Rapi Sejak Scroll Pertama</h1>
+              <p className="eyebrow">Spesialis Pagar, Canopy, Railing, dan Pintu Garasi Custom</p>
+              <h1>Solusi Las Custom untuk Rumah yang Ingin Tampil Lebih Rapi, Aman, dan Bernilai</h1>
               <p className="hero-text">
-                Halaman ini sekarang dibuat lebih kaya isi dan visual supaya calon pelanggan tidak
-                cuma melihat daftar jasa, tetapi langsung merasakan kualitas pengerjaan, gaya
-                desain, dan keseriusan brand sejak mereka membuka website dari Android atau HP
-                biasa sekalipun.
+                Setiap rumah dan bangunan punya kebutuhan yang berbeda. Ada yang membutuhkan pagar
+                yang lebih aman, ada yang mencari canopy yang ringan tapi tetap kokoh, dan ada juga
+                yang ingin railing atau pintu garasi yang tampil serasi dengan fasad bangunan.
               </p>
               <p className="hero-subtext">
-                Fokusnya bukan sekadar cantik, tetapi membuat orang berhenti sebentar, membaca,
-                lalu merasa bahwa bengkel ini memang layak diajak konsultasi.
+                Karena itu pengerjaan las yang baik harus dimulai dari ukuran yang tepat, pilihan
+                material yang sesuai, sistem bukaan yang nyaman, dan finishing yang terlihat
+                matang saat dipakai setiap hari.
               </p>
 
               <div className="hero-actions">
@@ -253,9 +253,9 @@ function App() {
               </figure>
 
               <aside className="hero-note-card" data-reveal style={{ '--delay': '320ms' }}>
-                <p>Built for mobile wow</p>
-                <h2>Animasi masuk, layer gambar, dan copy yang lebih kaya bikin landing page terasa jauh lebih hidup.</h2>
-                <span>Ringan dibuka, tetapi tetap terasa niat.</span>
+                <p>Hal penting</p>
+                <h2>Produk las yang baik harus seimbang antara fungsi, keamanan, dan tampilan.</h2>
+                <span>Bukan hanya kuat, tetapi juga nyaman dipakai dan sedap dipandang.</span>
               </aside>
             </div>
           </div>
@@ -272,18 +272,18 @@ function App() {
         <section className="section story-section">
           <div className="container story-layout">
             <div className="story-copy" data-reveal>
-              <p className="section-kicker">Kenapa Dirombak Lebih Penuh</p>
-              <h2>Website bengkel las lebih kuat kalau tidak terasa kosong.</h2>
+              <p className="section-kicker">Kenapa Harus Custom</p>
+              <h2>Setiap ukuran, bukaan, dan karakter bangunan butuh pendekatan yang berbeda.</h2>
               <p>
-                Banyak website jasa berhenti di daftar layanan dan satu tombol kontak. Padahal untuk
-                jasa pagar, canopy, railing, dan pintu garasi, orang butuh lebih dari itu. Mereka
-                ingin melihat rasa, kualitas, dan karakter hasil kerja sebelum memutuskan untuk chat.
+                Pagar untuk rumah sudut tentu berbeda dengan pagar untuk rumah mungil di area padat.
+                Canopy untuk carport juga tidak bisa disamakan dengan canopy untuk teras atau area
+                usaha. Karena itu pengerjaan custom penting agar hasil akhir benar-benar pas dengan
+                kebutuhan bangunan.
               </p>
               <p>
-                Karena itu aku tambahkan bacaan yang lebih kaya, ritme section yang lebih variatif,
-                dan foto-foto tematik agar calon pelanggan punya lebih banyak alasan untuk percaya.
-                Hasilnya terasa lebih profesional, lebih niat, dan tidak seperti landing page template
-                yang terlalu polos.
+                Dengan perencanaan yang tepat, tinggi railing bisa terasa aman, arah bukaan pintu
+                garasi bisa lebih nyaman, dan model pagar bisa tetap indah tanpa mengorbankan
+                fungsi dasar seperti keamanan dan kemudahan akses.
               </p>
             </div>
 
@@ -305,10 +305,11 @@ function App() {
           <div className="container">
             <div className="section-heading" data-reveal>
               <p className="section-kicker">Layanan Utama</p>
-              <h2>Setiap layanan ditulis lebih detail supaya pengunjung langsung paham apa yang ditawarkan.</h2>
+              <h2>Pilih jenis pengerjaan sesuai fungsi, kebutuhan ruang, dan tampilan bangunan Anda.</h2>
               <p>
-                Bukan sekadar nama jasa, tetapi juga gambaran manfaat, model, dan karakter hasil yang
-                dicari pelanggan saat mereka sedang membangun atau merenovasi rumah.
+                Setiap produk punya pertimbangan yang berbeda. Ada yang lebih fokus ke keamanan,
+                ada yang menekankan tampilan depan rumah, dan ada juga yang harus seimbang antara
+                fungsi pelindung, kenyamanan, dan visual.
               </p>
             </div>
 
@@ -334,11 +335,12 @@ function App() {
             <article className="cinematic-panel" data-reveal>
               <img src={`${baseUrl}images/exterior-showcase.jpg`} alt="Rumah modern dengan pagar dan area luar rapi." loading="lazy" />
               <div className="cinematic-overlay">
-                <p className="section-kicker">Visual Atmosfer</p>
-                <h2>Ketika gambar, copy, dan motion nyambung, website jasa terasa jauh lebih mahal.</h2>
+                <p className="section-kicker">Pertimbangan Desain</p>
+                <h2>Elemen besi yang tepat bisa membuat tampilan bangunan terasa lebih rapi dan berkelas.</h2>
                 <p>
-                  Section seperti ini membantu memberi jeda visual dan membuat pengalaman scroll di HP
-                  terasa lebih sinematik, bukan cuma kumpulan kotak dan teks.
+                  Pemilihan model, warna, dan komposisi bidang sebaiknya mengikuti bentuk rumah atau
+                  bangunan, bukan sekadar ikut tren. Dengan begitu hasil akhirnya lebih menyatu dan
+                  tidak cepat terasa ketinggalan.
                 </p>
               </div>
             </article>
@@ -349,10 +351,11 @@ function App() {
           <div className="container">
             <div className="section-heading" data-reveal>
               <p className="section-kicker">Galeri Inspirasi</p>
-              <h2>Foto tematik dari internet dipakai sementara supaya halaman tidak terasa kosong.</h2>
+              <h2>Tiap elemen besi punya fungsi yang berbeda, jadi modelnya pun perlu dipilih dengan tepat.</h2>
               <p>
-                Ini bukan foto proyek asli klien, tetapi cukup relevan untuk memberi mood visual yang
-                tepat sambil menunggu foto real dari hasil pengerjaan bengkel.
+                Bagian ini membantu Anda membayangkan arah desain yang sesuai, mulai dari pagar depan,
+                railing balkon, hingga pintu garasi yang ingin tetap aman tanpa merusak karakter
+                visual bangunan.
               </p>
             </div>
 
@@ -376,12 +379,12 @@ function App() {
         <section className="section fit-section">
           <div className="container fit-layout">
             <div className="fit-copy" data-reveal>
-              <p className="section-kicker">Cocok Untuk</p>
-              <h2>Website ini sekarang lebih mudah dipakai untuk mengarahkan berbagai tipe calon pelanggan.</h2>
+              <p className="section-kicker">Sering Dicari Untuk</p>
+              <h2>Kebutuhan proyek yang paling sering memerlukan pengerjaan las custom.</h2>
               <p>
-                Baik yang sedang bangun rumah dari nol, renovasi tampak depan, maupun butuh
-                pengerjaan untuk bangunan usaha, semuanya bisa merasa bahwa jasa ini relevan buat
-                kebutuhan mereka.
+                Mulai dari rumah baru, renovasi tampak depan, sampai bangunan usaha yang ingin
+                terlihat lebih tertata dan aman, pengerjaan custom membantu hasil akhir terasa lebih
+                pas dibanding solusi yang seragam.
               </p>
             </div>
 
@@ -400,7 +403,7 @@ function App() {
           <div className="container">
             <div className="section-heading" data-reveal>
               <p className="section-kicker">Alur Kerja</p>
-              <h2>Penjelasan proses dibuat lebih lengkap supaya orang merasa alurnya jelas dan aman.</h2>
+              <h2>Tahapan kerja yang jelas membantu hasil akhir lebih presisi dan minim revisi.</h2>
             </div>
 
             <div className="process-grid">
@@ -419,10 +422,10 @@ function App() {
           <div className="container faq-layout">
             <div className="faq-copy" data-reveal>
               <p className="section-kicker">Pertanyaan Umum</p>
-              <h2>Bagian FAQ ikut diperkaya supaya pengunjung dapat lebih banyak jawaban sebelum chat.</h2>
+              <h2>Beberapa hal yang sering ditanyakan sebelum memulai pengerjaan.</h2>
               <p>
-                Ini berguna untuk mengurangi rasa ragu, terutama saat pengunjung baru pertama kali
-                menemukan brand dan belum kenal kualitas kerjanya secara langsung.
+                Memahami poin-poin dasar ini akan membantu Anda menentukan kebutuhan dengan lebih
+                jelas sebelum masuk ke tahap survey, pengukuran, dan penawaran harga.
               </p>
             </div>
 
@@ -440,21 +443,21 @@ function App() {
         <section className="section contact-section" id="contact">
           <div className="container contact-card" data-reveal>
             <div className="contact-copy">
-              <p className="section-kicker">Langkah Final Biar Makin Nendang</p>
-              <h2>Strukturnya sudah lebih wah. Tinggal isi data asli klien supaya siap buat closing.</h2>
+              <p className="section-kicker">Sebelum Konsultasi</p>
+              <h2>Agar estimasi dan diskusi berjalan lebih cepat, siapkan data dasar proyek Anda.</h2>
               <p>
-                Setelah nomor WhatsApp, area layanan, dan foto proyek asli dimasukkan, landing page
-                ini bakal terasa jauh lebih kuat karena visual dan narasinya sudah siap menopang
-                trust dari awal sampai akhir.
+                Semakin lengkap informasi awal yang Anda kirim, semakin mudah menentukan model,
+                material, sistem bukaan, dan kisaran pengerjaan yang sesuai dengan kebutuhan
+                bangunan Anda.
               </p>
             </div>
 
             <div className="contact-actions">
-              <a className="button button-primary" href="#top">
-                Lihat Hero Lagi
+              <a className="button button-primary" href="#process">
+                Pelajari Proses
               </a>
               <a className="button button-secondary" href="#portfolio">
-                Cek Galeri
+                Lihat Inspirasi
               </a>
             </div>
 
@@ -472,7 +475,7 @@ function App() {
 
       <footer className="site-footer">
         <div className="container footer-inner">
-          <p>Lestari Las. Landing page modern dengan visual tematik, motion ringan, dan copy yang lebih meyakinkan.</p>
+          <p>Lestari Las. Solusi las custom untuk pagar, canopy, railing, dan pintu garasi.</p>
           <a href="#top">Kembali ke atas</a>
         </div>
       </footer>
