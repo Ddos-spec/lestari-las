@@ -109,6 +109,7 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
 
         whatsappLinks.forEach((link) => {
           link.addEventListener('click', () => {
+            // Pengiriman via GTM (opsi 1)
             window.dataLayer = window.dataLayer || []
             window.dataLayer.push({
               event: 'whatsapp_click',
@@ -116,6 +117,15 @@ const basePath = import.meta.env.BASE_URL.endsWith('/')
               whatsapp_text: link.textContent?.trim() || 'WhatsApp CTA',
               whatsapp_placement: link.dataset.whatsappPlacement || 'unknown',
             })
+
+            // Pengiriman via gtag.js langsung (opsi 2 - Google Ads & Analytics)
+            if (typeof window.gtag === 'function') {
+              window.gtag('event', 'generate_lead', {
+                event_category: 'engagement',
+                event_label: 'WhatsApp Click',
+                value: 1
+              })
+            }
           })
         })
       })()
