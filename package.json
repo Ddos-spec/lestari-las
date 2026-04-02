@@ -14,5 +14,8 @@
     "astro": "^6.0.4",
     "eslint": "^9.39.4",
     "globals": "^17.4.0"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2"
   }
 }
