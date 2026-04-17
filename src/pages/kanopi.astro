@@ -12,7 +12,7 @@ const MAP_EMBED = 'https://www.google.com/maps?q=-6.2822222,106.7025833&z=18&out
 const title = 'Jasa Pasang Kanopi Baja Ringan Bintaro & Tangerang – Lestari Las'
 const description = 'Jasa pasang kanopi baja ringan untuk carport dan teras di Bintaro, Tangerang Selatan, Ciledug. Survey gratis, desain custom, pengerjaan rapi dan tahan lama.'
 const canonical = 'https://bengkel-las.com/kanopi'
-const ogImage = 'https://bengkel-las.com/images/exterior-showcase.jpg'
+const ogImage = 'https://bengkel-las.com/images/garage-showcase.jpg'
 
 const services = [
   {
@@ -139,7 +139,7 @@ const jsonLd = {
          HERO — full image bg, conversion focus
     ══════════════════════════════════════ -->
     <section class="lp-hero">
-      <div class="lp-hero-bg" style={`background-image:url(${basePath}images/exterior-showcase.jpg)`} aria-hidden="true"></div>
+      <div class="lp-hero-bg" style={`background-image:url(${basePath}images/garage-showcase.jpg)`} aria-hidden="true"></div>
       <div class="lp-hero-overlay" aria-hidden="true"></div>
 
       <div class="container lp-hero-content">
@@ -207,6 +207,33 @@ const jsonLd = {
     </div>
 
     <!-- ══════════════════════════════════════
+         PHOTO GALLERY — bento grid (UI UX Pro Max)
+    ══════════════════════════════════════ -->
+    <section class="lp-gallery-section">
+      <div class="container lp-gallery-grid">
+        <div class="lp-gallery-item lp-gallery-main" style="--delay:0ms;">
+          <img src={`${basePath}images/garage-showcase.jpg`} alt="Kanopi carport baja ringan custom Lestari Las Bintaro" loading="lazy" decoding="async" />
+          <div class="lp-gallery-caption">
+            <span>Kanopi Carport</span>
+            <strong>Kanopi carport baja ringan — ukuran presisi, pemasangan rapi dan tahan lama.</strong>
+          </div>
+        </div>
+        <div class="lp-gallery-item lp-gallery-secondary" style="--delay:120ms;">
+          <img src={`${basePath}images/exterior-showcase.jpg`} alt="Kanopi teras depan rumah modern Bintaro" loading="lazy" decoding="async" />
+          <div class="lp-gallery-caption">
+            <span>Kanopi Teras</span>
+            <strong>Kanopi teras depan yang menyatu dengan fasad rumah.</strong>
+          </div>
+        </div>
+        <div class="lp-gallery-stat-card" style="--delay:220ms;">
+          <p>Estimasi Harga Mulai</p>
+          <h3>Rp 3 Juta</h3>
+          <span>Kanopi carport standar 3×5 m. Survey gratis, harga transparan sebelum pengerjaan dimulai.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
          SERVICES — 3 jenis kanopi
     ══════════════════════════════════════ -->
     <section class="lp-section" id="layanan">
@@ -220,15 +247,40 @@ const jsonLd = {
           </p>
         </header>
 
-        <div class="lp-cards-3">
-          {services.map((s, i) => (
-            <article class="lp-card" data-reveal style={`--delay:${i * 100}ms;`}>
-              <span class="lp-card-num">{s.n}</span>
-              <h3>{s.title}</h3>
-              <p>{s.desc}</p>
-              <ul class="lp-card-list">
-                {s.pts.map(pt => <li>{pt}</li>)}
-              </ul>
+        <div class="lp-photo-cards">
+          {[
+            {
+              img: 'garage-showcase.jpg',
+              alt: 'Kanopi carport baja ringan custom Lestari Las',
+              n: '01', title: 'Kanopi Carport',
+              desc: 'Pelindung kendaraan proporsional dengan lebar garasi dan fasad rumah. Rangka baja ringan dengan atap polycarbonate atau spandek, ukuran presisi.',
+              pts: ['Pilihan atap bening, doff, atau gelap', 'Ukuran mengikuti dimensi carport', 'Tiang dan rangka anti karat'],
+            },
+            {
+              img: 'exterior-showcase.jpg',
+              alt: 'Kanopi teras depan rumah modern Bintaro Tangerang',
+              n: '02', title: 'Kanopi Teras',
+              desc: 'Solusi teras depan atau samping — perlindungan dari hujan dan terik tanpa menghalangi cahaya alami masuk ke dalam rumah.',
+              pts: ['Desain menyesuaikan gaya rumah', 'Cocok teras depan dan belakang', 'Struktur ringan, pemasangan cepat'],
+            },
+            {
+              img: 'garage-showcase.jpg',
+              alt: 'Kanopi polycarbonate baja ringan tahan cuaca',
+              n: '03', title: 'Kanopi Polycarbonate',
+              desc: 'Material baja ringan ringan, tahan cuaca ekstrem, dan tidak memerlukan perawatan intensif — pilihan tepat untuk area residensial maupun komersial.',
+              pts: ['Lebih ringan dibanding besi konvensional', 'Tahan karat dan cuaca panas-hujan', 'Umur pakai lebih panjang'],
+            },
+          ].map((s, i) => (
+            <article class="lp-photo-card" style={`--delay:${i * 110}ms;`}>
+              <img src={`${basePath}images/${s.img}`} alt={s.alt} loading="lazy" decoding="async" />
+              <div class="lp-photo-content">
+                <span class="lp-photo-index">{s.n} — {s.title}</span>
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
+                <ul class="lp-photo-pts">
+                  {s.pts.map(pt => <li>{pt}</li>)}
+                </ul>
+              </div>
             </article>
           ))}
         </div>
@@ -310,6 +362,25 @@ const jsonLd = {
             Hubungi kami via WhatsApp →
           </a>
         </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CINEMATIC FEATURE — full-width photo showcase
+    ══════════════════════════════════════ -->
+    <section class="lp-section" style="padding-top:0;">
+      <div class="container">
+        <div class="lp-cinematic">
+          <img src={`${basePath}images/exterior-showcase.jpg`} alt="Workshop Lestari Las — kanopi baja ringan custom Bintaro" loading="lazy" decoding="async" />
+          <div class="lp-cinematic-copy">
+            <h2>Dikerjakan Langsung<br />di Workshop Kami</h2>
+            <p>
+              Setiap rangka dipotong, dirakit, dan dilas sesuai ukuran lapangan.
+              Tidak ada barang jadi — semua custom untuk kondisi bangunan Anda.
+              Pemasangan dilakukan oleh tim Lestari Las langsung ke lokasi.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 

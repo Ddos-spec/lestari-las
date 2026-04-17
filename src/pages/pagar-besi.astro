@@ -171,6 +171,31 @@ const jsonLd = {
       </ul>
     </div>
 
+    <!-- PHOTO GALLERY -->
+    <section class="lp-gallery-section">
+      <div class="container lp-gallery-grid">
+        <div class="lp-gallery-item lp-gallery-main" style="--delay:0ms;">
+          <img src={`${basePath}images/gate-hero.jpg`} alt="Pagar besi minimalis pintu pagar custom Lestari Las Bintaro" loading="lazy" decoding="async" />
+          <div class="lp-gallery-caption">
+            <span>Pagar Besi &amp; Pintu Pagar</span>
+            <strong>Pagar minimalis dan pintu pagar custom — desain presisi, material anti karat.</strong>
+          </div>
+        </div>
+        <div class="lp-gallery-item lp-gallery-secondary" style="--delay:120ms;">
+          <img src={`${basePath}images/exterior-showcase.jpg`} alt="Eksterior rumah dengan pagar besi rapi Bintaro Tangerang" loading="lazy" decoding="async" />
+          <div class="lp-gallery-caption">
+            <span>Eksterior Rumah</span>
+            <strong>Pagar yang rapi adalah hal pertama yang terlihat tamu dan tetangga.</strong>
+          </div>
+        </div>
+        <div class="lp-gallery-stat-card" style="--delay:220ms;">
+          <p>Estimasi Harga Mulai</p>
+          <h3>Rp 400rb/m</h3>
+          <span>Pagar minimalis hollow galvanis. Harga paket pagar + pintu mulai Rp 5 juta. Survey gratis, harga tertulis.</span>
+        </div>
+      </div>
+    </section>
+
     <!-- LAYANAN -->
     <section class="lp-section" id="layanan">
       <div class="container">
@@ -182,15 +207,40 @@ const jsonLd = {
             dan pintu swing, sementara garasi sempit lebih cocok dengan pintu lipat besi yang hemat ruang.
           </p>
         </header>
-        <div class="lp-cards-4">
-          {services.map((s, i) => (
-            <article class="lp-card" data-reveal style={`--delay:${i * 90}ms;`}>
-              <span class="lp-card-num">{s.n}</span>
-              <h3>{s.title}</h3>
-              <p>{s.desc}</p>
-              <ul class="lp-card-list">
-                {s.pts.map(pt => <li>{pt}</li>)}
-              </ul>
+        <div class="lp-photo-cards">
+          {[
+            {
+              img: 'gate-hero.jpg',
+              alt: 'Pagar besi minimalis custom Bintaro Tangerang Selatan',
+              n: '01', title: 'Pagar Besi Minimalis',
+              desc: 'Pagar rumah dengan bilah besi yang tersusun rapi — memadukan keamanan dengan tampilan fasad yang bersih dan modern.',
+              pts: ['Model minimalis hingga klasik', 'Material hollow galvanis atau besi solid', 'Finishing cat anti karat'],
+            },
+            {
+              img: 'exterior-showcase.jpg',
+              alt: 'Pintu pagar swing besi satu dua daun Bintaro',
+              n: '02', title: 'Pintu Pagar &amp; Lipat',
+              desc: 'Pintu swing satu atau dua daun untuk rumah tinggal. Pintu lipat besi untuk garasi sempit yang butuh hemat ruang bukaan.',
+              pts: ['Swing satu/dua daun sesuai lebar akses', 'Pintu lipat rel atas atau bawah', 'Siap dipasang motor otomatis'],
+            },
+            {
+              img: 'gate-hero.jpg',
+              alt: 'Pagar custom desain khusus ukuran tidak standar',
+              n: '03', title: 'Pagar Custom',
+              desc: 'Untuk bangunan dengan ukuran tidak standar atau desain khusus. Pagar dibuat sesuai gambar dan kondisi lapangan hasil survey.',
+              pts: ['Ukuran dari hasil ukur lapangan', 'Model bebas sesuai keinginan', 'Tersedia motif dan ornamen'],
+            },
+          ].map((s, i) => (
+            <article class="lp-photo-card" style={`--delay:${i * 110}ms;`}>
+              <img src={`${basePath}images/${s.img}`} alt={s.alt} loading="lazy" decoding="async" />
+              <div class="lp-photo-content">
+                <span class="lp-photo-index" set:html={`${s.n} — ${s.title}`}></span>
+                <h3 set:html={s.title}></h3>
+                <p>{s.desc}</p>
+                <ul class="lp-photo-pts">
+                  {s.pts.map(pt => <li>{pt}</li>)}
+                </ul>
+              </div>
             </article>
           ))}
         </div>
@@ -263,6 +313,23 @@ const jsonLd = {
             Hubungi kami via WhatsApp →
           </a>
         </p>
+      </div>
+    </section>
+
+    <!-- CINEMATIC FEATURE -->
+    <section class="lp-section" style="padding-top:0;">
+      <div class="container">
+        <div class="lp-cinematic">
+          <img src={`${basePath}images/gate-hero.jpg`} alt="Pagar besi custom Lestari Las workshop Bintaro Tangerang" loading="lazy" decoding="async" />
+          <div class="lp-cinematic-copy">
+            <h2>Fabrikasi Sendiri<br />di Workshop Kami</h2>
+            <p>
+              Setiap bilah, rangka, dan sambungan diproduksi langsung di workshop Lestari Las.
+              Tidak ada barang jadi — semua dibuat custom sesuai ukuran dan desain lapangan Anda.
+              Kualitas las dicek sebelum pengiriman ke lokasi.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
